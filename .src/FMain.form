@@ -1,0 +1,266 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,142.8571,100)
+  { Menu1 Menu
+    Text = ("Panel")
+    Picture = Picture["solar-panel(1).png"]
+    { Menu2 Menu
+      Text = ("Add")
+      Picture = Picture["icon:/128/added"]
+    }
+    { Menu5 Menu
+      Text = ("Fixing")
+      Enabled = False
+    }
+  }
+  { Menu3 Menu
+    Text = ("Test")
+    Picture = Picture["tester.png"]
+    { Menu4 Menu
+      Text = ("New")
+    }
+  }
+  { Menu6 Menu
+    Text = ("Misc")
+    { Menu7 Menu
+      Text = ("String fuse")
+    }
+    { Menu8 Menu
+      Text = ("Product DB")
+    }
+  }
+  { Frame1 Frame
+    MoveScaled(67,1,62,11)
+    Background = Color.LightGray
+    Text = ("String 1")
+    { SpinBox1 SpinBox
+      MoveScaled(2,4,15,5)
+      Enabled = False
+      MinValue = 1
+      MaxValue = 1000
+      Value = 1
+    }
+    { Label2 Label
+      MoveScaled(2,1,16,3)
+      Text = ("Number Of Panels")
+    }
+    { Label3 Label
+      MoveScaled(19,1,6,3)
+      Text = ("Voc")
+    }
+    { Label4 Label
+      MoveScaled(19,5,13,4)
+      Font = Font["Bold,12"]
+    }
+    { Label6 Label
+      MoveScaled(33,5,13,4)
+      Font = Font["Bold,12"]
+    }
+    { Label7 Label
+      MoveScaled(48,1,9,3)
+      Text = ("Watts")
+    }
+    { Label8 Label
+      MoveScaled(48,5,12,4)
+      Font = Font["Bold,12"]
+    }
+    { Label5 Label
+      MoveScaled(33,1,7,3)
+      Text = ("Isc")
+    }
+  }
+  { Label10 Label
+    MoveScaled(1,91,16,4)
+  }
+  { Frame2 Frame
+    MoveScaled(67,13,62,11)
+    Background = Color.LightGray
+    Text = ("String 2")
+    { SpinBox2 SpinBox
+      MoveScaled(2,4,15,5)
+      Enabled = False
+      MaxValue = 1000
+    }
+    { Label11 Label
+      MoveScaled(2,1,16,3)
+      Text = ("Number Of Panels")
+    }
+    { Label12 Label
+      MoveScaled(19,1,6,3)
+      Text = ("Voc")
+    }
+    { Label13 Label
+      MoveScaled(19,5,13,4)
+      Font = Font["Bold,12"]
+    }
+    { Label14 Label
+      MoveScaled(33,5,13,4)
+      Font = Font["Bold,12"]
+    }
+    { Label15 Label
+      MoveScaled(48,1,9,3)
+      Text = ("Watts")
+    }
+    { Label16 Label
+      MoveScaled(48,5,12,4)
+      Font = Font["Bold,12"]
+    }
+    { Label17 Label
+      MoveScaled(33,1,7,3)
+      Text = ("Isc")
+    }
+  }
+  { Frame3 Frame
+    MoveScaled(67,25,62,11)
+    Background = Color.LightGray
+    Text = ("String 3")
+    { SpinBox3 SpinBox
+      MoveScaled(2,4,15,5)
+      Enabled = False
+      MaxValue = 1000
+    }
+    { Label18 Label
+      MoveScaled(2,1,16,3)
+      Text = ("Number Of Panels")
+    }
+    { Label19 Label
+      MoveScaled(19,1,6,3)
+      Text = ("Voc")
+    }
+    { Label20 Label
+      MoveScaled(19,5,13,4)
+      Font = Font["Bold,12"]
+    }
+    { Label21 Label
+      MoveScaled(33,5,13,4)
+      Font = Font["Bold,12"]
+    }
+    { Label22 Label
+      MoveScaled(48,1,9,3)
+      Text = ("Watts")
+    }
+    { Label23 Label
+      MoveScaled(48,5,12,4)
+      Font = Font["Bold,12"]
+    }
+    { Label24 Label
+      MoveScaled(33,1,7,3)
+      Text = ("Isc")
+    }
+  }
+  { Label25 Label
+    MoveScaled(67,61,62,5)
+    Font = Font["Bold,+1"]
+  }
+  { TextArea1 TextArea
+    MoveScaled(67,72,62,23)
+  }
+  { Label26 Label
+    MoveScaled(1,84,40,3)
+  }
+  { Label27 Label
+    MoveScaled(1,88,42,3)
+  }
+  { Button4 Button
+    MoveScaled(67,67,10,4)
+    Enabled = False
+    Text = ("Do It")
+  }
+  { Button3 Button
+    MoveScaled(78,67,22,4)
+    Text = ("Copy To Clipboard")
+  }
+  { Frame4 Frame
+    MoveScaled(67,37,62,11)
+    Background = Color.LightGray
+    Text = ("String 3")
+    { SpinBox4 SpinBox
+      MoveScaled(2,4,15,5)
+      Enabled = False
+      MaxValue = 1000
+    }
+    { Label28 Label
+      MoveScaled(2,1,16,3)
+      Text = ("Number Of Panels")
+    }
+    { Label29 Label
+      MoveScaled(19,1,6,3)
+      Text = ("Voc")
+    }
+    { Label30 Label
+      MoveScaled(19,5,13,4)
+      Font = Font["Bold,12"]
+    }
+    { Label31 Label
+      MoveScaled(33,5,13,4)
+      Font = Font["Bold,12"]
+    }
+    { Label32 Label
+      MoveScaled(48,1,9,3)
+      Text = ("Watts")
+    }
+    { Label33 Label
+      MoveScaled(48,5,12,4)
+      Font = Font["Bold,12"]
+    }
+    { Label34 Label
+      MoveScaled(33,1,7,3)
+      Text = ("Isc")
+    }
+  }
+  { Frame5 Frame
+    MoveScaled(1,61,61,11)
+    Text = ("Inverter Selection")
+    { ComboBox1 ComboBox
+      MoveScaled(3,2,50,6)
+      Font = Font["+1"]
+    }
+    { Button5 Button
+      MoveScaled(54,2,6,6)
+      Text = ("Add")
+    }
+  }
+  { Frame6 Frame
+    MoveScaled(1,2,61,30)
+    Text = ("Panel Selection")
+    { ListView1 ListView
+      MoveScaled(1,4,59,25)
+    }
+  }
+  { Frame7 Frame
+    MoveScaled(1,33,61,27)
+    Text = ("Installation Suburb")
+    { TextBox1 TextBox
+      MoveScaled(1,4,59,4)
+      Enabled = False
+    }
+    { ListView2 ListView
+      MoveScaled(1,8,59,18)
+    }
+  }
+  { Frame8 Frame
+    MoveScaled(1,73,61,11)
+    Text = ("Battery Selection")
+    { TextBox2 TextBox
+      MoveScaled(3,3,44,6)
+    }
+    { Button1 Button
+      MoveScaled(47,3,6,6)
+    }
+  }
+  { Frame9 Frame
+    MoveScaled(67,49,62,11)
+    { Label1 Label
+      MoveScaled(1,1,18,3)
+      Text = ("Number Of Batteries")
+    }
+    { SpinBox5 SpinBox
+      MoveScaled(1,5,16,5)
+    }
+  }
+  { ListView3 ListView
+    MoveScaled(4,82,44,13)
+    Visible = False
+  }
+}

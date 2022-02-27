@@ -1,0 +1,20 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,110,74)
+  { Menu1 Menu
+    Text = ("Products")
+    { Menu2 Menu
+      Text = ("Add")
+    }
+  }
+  { ListView1 ListView
+    MoveScaled(1,9,60,57)
+  }
+  { TextArea1 TextArea
+    MoveScaled(63,9,46,57)
+  }
+  { ComboBox1 ComboBox
+    MoveScaled(1,2,44,4)
+  }
+}

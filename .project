@@ -1,0 +1,26 @@
+# Gambas Project File 3.0
+Title=VocCal
+Startup=FMain
+Icon=solar-panel(1).png
+Version=0.1.18
+Component=gb.image
+Component=gb.gtk
+Component=gb.form
+Component=gb.db
+Component=gb.desktop
+Component=gb.settings
+Description="Calulate Voc and Isc for Solar Panels"
+Authors="Shane Powell"
+TabSize=2
+Language=en_US
+SourcePath=/home/shane/Projects/VocCal
+Maintainer=shane
+Address=shane@shane-HP-Laptop-15-bs0xx
+License=General Public License
+PackageName=voccal-0.1.18
+PackageVersion=2
+Packager=1
+Systems=ubuntu
+Menus=ubuntu:"Applications/Editors"
+Categories=ubuntu:"Solar"
+Groups=ubuntu:"utils"

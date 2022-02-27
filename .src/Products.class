@@ -1,0 +1,74 @@
+' Gambas class file
+
+Public dbcon As Connection 
+
+
+Public Sub Menu2_Click()
+
+  AddProduct.ShowModal
+
+End
+
+Public Sub Form_Open()
+Dim r As Result
+
+ComboBox1.Add("Battery", 1)
+  ComboBox1.Add("Inverter", 2)
+  ComboBox1.Add("Charger", 3)
+  ComboBox1.Add("Other", 4)
+  
+dbcon = FMain.Con
+
+  ListView1.Clear
+  ' r = dbcon.Find("battery")
+  ' For Each r 
+  '   ListView1.Add(r!id, r!man & " " & r!model)
+  ' Next
+  ComboBox1.Text = "Battery"
+  
+End
+
+Public Sub ListView1_Select()
+Dim r As Result
+TextArea1.Text = ""
+If ComboBox1.Text = "Battery" Then 
+r = dbcon.Find("battery", "id = &1", ListView1.Current.Key)
+TextArea1.Text = TextArea1.Text & "Manufacturer- " & r!man & Chr(13)
+TextArea1.Text = TextArea1.Text & "Model- " & r!model & Chr(13)
+TextArea1.Text = TextArea1.Text & "UN Number- " & r!un & Chr(13)
+TextArea1.Text = TextArea1.Text & "Voltage- " & r!voltage & " V" & Chr(13)
+TextArea1.Text = TextArea1.Text & "kWh- " & r!kwh & " kWh" & Chr(13)
+TextArea1.Text = TextArea1.Text & "Amp Hours- " & r!ah & " Ah" & Chr(13)
+TextArea1.Text = TextArea1.Text & "Power- " & r!power & "kW" & Chr(13)
+TextArea1.Text = TextArea1.text & "Short circuit Current- " & r!scc & " A"
+Endif 
+If ComboBox1.Text = "Inverter" Then 
+r = dbcon.Find("inverter", "id = &1", ListView1.Current.Key)
+TextArea1.Text = TextArea1.Text & "Manufacturer- " & r!man & Chr(13)
+TextArea1.Text = TextArea1.Text & "Model- " & r!model & Chr(13)
+'TextArea1.Text = TextArea1.Text & "Voltage- " & r!voltage & Chr(13)
+'TextArea1.Text = TextArea1.Text & "kWh- " & r!kwh & Chr(13)
+'TextArea1.Text = TextArea1.Text & "Amp Hours- " & r!ah
+TextArea1.Text = TextArea1.Text & "Power- " & r!power
+Endif 
+End
+
+Public Sub ComboBox1_Change()
+Dim r As Result
+
+  If ComboBox1.Text = "Battery" Then
+  ListView1.Clear
+  r = dbcon.Find("battery")
+  For Each r 
+    ListView1.Add(r!id, r!man & " " & r!model)
+  Next  
+  Endif
+  If ComboBox1.Text = "Inverter" Then
+  ListView1.Clear
+  r = dbcon.Find("inverter")
+  For Each r 
+    ListView1.Add(r!id, r!man & " " & r!model)
+  Next
+  Endif 
+  
+End

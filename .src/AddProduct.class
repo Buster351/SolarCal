@@ -1,0 +1,75 @@
+' Gambas class file
+
+ Public pCon As Connection
+ 
+
+Public Sub Form_Open()
+Dim sSlot, sKey As String
+Dim i As Integer
+
+
+ 
+  pCon = FMain.Con
+  
+  ComboBox1.Add("Battery", 1)
+  ComboBox1.Add("Inverter", 2)
+  ComboBox1.Add("Charger", 3)
+  ComboBox1.Add("Other", 4)
+  
+  
+End
+
+Public Sub Button2_Click()
+
+  Me.Close
+
+End
+
+Public Sub Button1_Click()
+
+  Dim r As Result
+  
+  ' r = pCon.Create("products")
+  ' r!type = ComboBox1.Selected
+  ' r!man = ComboBox2.Selected
+  ' r!model = TextBox2.Text
+  ' r!ah = TextBox4.Text
+  ' r.Update
+  ' pCon.Commit
+  Me.Close
+  
+
+End
+
+Public Sub ComboBox1_Click()
+
+
+End
+
+Public Sub ComboBox2_Change()
+
+  
+
+End
+
+Public Sub ComboBox1_Change()
+
+  Dim i As Integer
+  ' If ComboBox1.Text = "Battery" Then
+  '   For i = 0 To Settings.Count - 1
+  '  ComboBox2.Add(Settings["Battery/Type[" & i & "]"])
+  ' Next
+  ' Endif
+
+End
+
+Public Sub Button3_Click()
+If ComboBox1.Text = "Battery" Then
+  AddBattery.ShowModal
+Endif
+  
+If ComboBox1.Text = "Inverter" Then 
+  AddInverter.ShowModal  
+Endif 
+
+End

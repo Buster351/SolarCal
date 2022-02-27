@@ -1,0 +1,31 @@
+' Gambas class file
+
+Public Isc As Float
+Public Max_fuse As Float
+
+
+Public Sub Form_Open()
+
+  Isc = FMain.selected_panel!isc
+  Max_fuse = FMain.selected_panel!fuse 
+  
+  TextBox1.Text = Isc & " A"
+  TextBox2.Text = Max_fuse & " A"
+  
+
+End
+
+Public Sub SpinBox1_Change()
+
+  If (SpinBox1.Value - 1) * isc > Max_fuse Then
+    Label1.Text = "Fuse Required"
+    Label2.text = "Min Fuse Size=" & (1.5 * Isc)
+    Label3.Text = "Max Fuse Size=" & (2.4 * Isc)
+  Else
+    Label1.Text = "?"
+    Label2.text = ""
+    Label3.Text = ""
+        
+  Endif
+
+End

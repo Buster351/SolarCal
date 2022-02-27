@@ -1,0 +1,58 @@
+* Sun Dec 12 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.18
+- Lots Of changes add battery info
+
+* Sat Dec 11 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.17
+
+* Sat Dec 11 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.17
+- Some Gui Tidying
+
+* Wed Oct 27 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.16
+
+* Sun May 16 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.12
+
+* Sun May 16 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.11
+- Some fine turning
+
+* Mon May 10 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.10
+- fixes
+
+* Wed Apr 28 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.9
+- none
+
+* Sat Mar 20 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.8
+- added copy to clipboard and rounded panel voltage
+
+* Sat Mar 20 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.8
+- fixed path problems
+
+* Sat Mar 20 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.8
+
+* Fri Mar 19 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.8
+- ?
+
+* Fri Mar 19 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.7
+
+* Fri Mar 19 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.7
+- trying to fix Cant find db WHEN make package
+
+* Fri Mar 19 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.7
+- more fixes
+
+* Fri Mar 19 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.6
+
+* Fri Mar 19 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.6
+- fixes
+
+* Thu Mar 18 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.6
+- small fixes
+
+* Sat Mar 13 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.1.5
+- Made big changes
+- added indervidual string up to 3
+- calulated if a series fuse is needed
+- input for min temp for location
+- calulation of Max Voc for temp
+
+* Tue Mar 09 2021 shane <shane@shane-HP-Laptop-15-bs0xx> 0.0.4
+- Initial release
+

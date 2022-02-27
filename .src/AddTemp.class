@@ -1,0 +1,30 @@
+' Gambas class file
+
+
+Public Sub Button1_Click()
+
+  Dim r As Result
+  
+  r = FMain.Con.Edit("australian_postcodes", "id=&1", FMain.SelTown)
+  r!min_temp = TextBox1.Text
+  r.Update
+  FMain.Con.Commit
+  
+   FMain.TempAdjVoc = Round(FMain.GetTempAdjVoc(FMain.selected_panel, r!min_temp), -2)
+  Me.Close
+  
+End
+
+
+Public Sub Button3_Click()
+
+  Desktop.Open("http://www.bom.gov.au/climate/data/")
+
+End
+
+Public Sub Button2_Click()
+
+ 
+  Me.Close 
+
+End

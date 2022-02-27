@@ -1,0 +1,53 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,30)
+  { Label1 Label
+    MoveScaled(1,2,19,4)
+    Alignment = Align.Right
+    Text = ("Manufacturer")
+  }
+  { Label2 Label
+    MoveScaled(1,6,19,4)
+    Alignment = Align.Right
+    Text = ("Model")
+  }
+  { Label3 Label
+    MoveScaled(1,10,19,4)
+    Alignment = Align.Right
+    Text = ("Power")
+  }
+  { Label4 Label
+    MoveScaled(1,14,19,4)
+    Alignment = Align.Right
+    Text = ("VA")
+  }
+  { TextBox1 TextBox
+    MoveScaled(24,2,35,4)
+  }
+  { TextBox2 TextBox
+    MoveScaled(24,6,35,4)
+  }
+  { TextBox3 TextBox
+    MoveScaled(24,10,35,4)
+  }
+  { TextBox4 TextBox
+    MoveScaled(24,14,35,4)
+  }
+  { Button1 Button
+    MoveScaled(55,25,7,4)
+    Text = ("Ok")
+  }
+  { Button2 Button
+    MoveScaled(42,25,11,4)
+    Text = ("Cancel")
+  }
+  { Label5 Label
+    MoveScaled(1,18,19,4)
+    Alignment = Align.Right
+    Text = ("Max PV Voltage")
+  }
+  { TextBox5 TextBox
+    MoveScaled(24,18,35,4)
+  }
+}

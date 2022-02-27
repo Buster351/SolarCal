@@ -1,0 +1,37 @@
+' Gambas class file
+
+Public Sub Run() As Boolean
+
+  Return Not Me.ShowModal()
+
+End
+
+Public Sub btnOK_Click()
+Dim r As Result
+
+r = FMain.Con.Create("panels")
+r!man = TextBox1.Text
+r!model = TextBox2.Text
+r!watt = TextBox3.Text
+r!voc = TextBox4.Text
+r!isc = TextBox5.Text
+r!temp_co = TextBox6.Text
+r!fuse = TextBox7.Text
+r!stc_temp = TextBox8.Text
+r!panellen = SpinBox3.Value
+r!panelwid = SpinBox4.value
+r!minfix = SpinBox1.Value
+r!maxfix = SpinBox2.Value
+r.Update
+FMain.Con.Commit
+
+  Me.Close(True)
+
+End
+
+Public Sub btnCancel_Click()
+
+  Me.Close
+
+End
+

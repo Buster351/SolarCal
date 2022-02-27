@@ -1,0 +1,59 @@
+' Gambas class file
+
+Public r As Result
+Public PanelId As Integer
+
+
+Public Sub Run() As Boolean
+
+  Return Not Me.ShowModal()
+
+End
+
+Public Sub btnOK_Click()
+'Dim r As Result
+
+r = FMain.Con.Edit("panels", "id=&1", PanelId)
+r!man = TextBox1.Text
+r!model = TextBox2.Text
+r!watt = TextBox3.Text
+r!voc = TextBox4.Text
+r!isc = TextBox5.Text
+r!temp_co = TextBox6.Text
+r!fuse = TextBox7.Text
+r!stc_temp = TextBox8.Text
+r!panellen = SpinBox3.Value
+r!panelwid = SpinBox4.value
+r!minfix = SpinBox1.Value
+r!maxfix = SpinBox2.Value
+r.Update
+FMain.Con.Commit
+
+  Me.Close(True)
+
+End
+
+Public Sub btnCancel_Click()
+
+  Me.Close
+
+End
+
+
+Public Sub Form_Open()
+'r = FMain.Con.Find("australian_postcodes", "id=&1", FMain.SelTown)
+r = FMain.Con.find("panels", "id=&1", PanelId)
+TextBox1.Text = r!man
+TextBox2.Text = r!model
+TextBox3.Text = r!watt
+TextBox4.Text = r!voc
+TextBox5.Text = r!isc
+TextBox6.Text = r!temp_co
+TextBox7.Text = r!fuse 
+TextBox8.Text = r!stc_temp
+SpinBox3.Value = r!panellen
+SpinBox4.Value = r!panelwid
+SpinBox1.Value = r!minfix
+SpinBox2.Value = r!maxfix 
+
+End
