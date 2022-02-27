@@ -3,6 +3,7 @@ Title=VocCal
 Startup=FMain
 Icon=solar-panel(1).png
 Version=0.1.18
+VersionFile=1
 Component=gb.image
 Component=gb.gtk
 Component=gb.form
